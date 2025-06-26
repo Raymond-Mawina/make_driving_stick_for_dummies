@@ -33,14 +33,26 @@ img {
     margin-block-start: 2rem;
 }
 
-#sign_card_container p {
+#sign_description_container p:nth-child(1) {
   margin:0;
   background-color: black;
   color: white;
   padding: 1rem;
+  font-size: x-large;
   margin-block-start: 2rem;
+  block-size: 1rem;
+  align-content: center;
+  text-align: center
+}
+
+#sign_description_container p:nth-child(2) {
+  margin:0;
+  background-color: black;
+  color: white;
+  padding: 1rem;
   block-size: 3rem;
   align-content: center;
+  text-align: center
 }
 
 #sign_category p:nth-child(1) {

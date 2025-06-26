@@ -16,7 +16,10 @@ function App() {
           <p>{signs[currentIndex].secondary_category}</p>
         </section>
 
-        <LearnSignCard signMetadata={signs[currentIndex]} />
+        <LearnSignCard
+          signMetadata={signs[currentIndex]}
+          currentIndex={currentIndex}
+        />
         <LeftRightButtons
           signs={signs}
           currentIndex={currentIndex}

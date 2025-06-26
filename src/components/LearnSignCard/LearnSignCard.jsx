@@ -1,4 +1,4 @@
-function LearnSignCard({ signMetadata }) {
+function LearnSignCard({ signMetadata, currentIndex }) {
   return (
     <section id="sign_card_container">
       <img
@@ -6,7 +6,10 @@ function LearnSignCard({ signMetadata }) {
         alt={signMetadata.description}
       />
 
-      <p>{signMetadata.description}</p>
+      <section id="sign_description_container">
+        <p>{currentIndex}</p>
+        <p>{signMetadata.description}</p>
+      </section>
     </section>
   );
 }
