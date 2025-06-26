@@ -9,4 +9,4 @@
 
 - The learning path card currently looks like this:
 
-  - ![Alt text](./src/assets/screenshots/main_screenshot.png)
+  ![Alt text](./src/assets/screenshots/main_screenshot.png)
