@@ -9,7 +9,7 @@ function LeftRightButtons({ signs, setCurrentIndex, currentIndex }) {
           }
         }}
       >
-        {"<--"} left
+        prev
       </button>
       <button
         onClick={() => {
@@ -19,7 +19,7 @@ function LeftRightButtons({ signs, setCurrentIndex, currentIndex }) {
           }
         }}
       >
-        right {"-->"}
+        next
       </button>
     </section>
   );

@@ -7,7 +7,7 @@ function LearnSignCard({ signMetadata, currentIndex }) {
       />
 
       <section id="sign_description_container">
-        <p>{currentIndex}</p>
+        <p>{currentIndex + 1}</p>
         <p>{signMetadata.description}</p>
       </section>
     </section>
