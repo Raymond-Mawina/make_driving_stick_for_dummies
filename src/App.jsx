@@ -2,7 +2,7 @@ import { useState } from "react";
 import "./App.css";
 import signMetadata from "./sign_metadata";
 import LearnSignCard from "./components/LearnSignCard/LearnSignCard";
-import LeftRightButtons from "./components/LeftRightButtons/LeftRightButtons";
+import PrevNextButtons from "./components/PrevNextButtons/PrevNextButtons";
 
 function App() {
   const [signs, _] = useState(signMetadata);
@@ -20,7 +20,7 @@ function App() {
           signMetadata={signs[currentIndex]}
           currentIndex={currentIndex}
         />
-        <LeftRightButtons
+        <PrevNextButtons
           signs={signs}
           currentIndex={currentIndex}
           setCurrentIndex={setCurrentIndex}

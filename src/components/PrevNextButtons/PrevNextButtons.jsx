@@ -1,9 +1,8 @@
-function LeftRightButtons({ signs, setCurrentIndex, currentIndex }) {
+function PrevNextButtons({ signs, setCurrentIndex, currentIndex }) {
   return (
     <section id="button_container">
       <button
         onClick={() => {
-          console.log("left clicked");
           if (currentIndex > 0) {
             setCurrentIndex(currentIndex - 1);
           }
@@ -13,7 +12,6 @@ function LeftRightButtons({ signs, setCurrentIndex, currentIndex }) {
       </button>
       <button
         onClick={() => {
-          console.log("right clicked");
           if (currentIndex < signs.length - 1) {
             setCurrentIndex(currentIndex + 1);
           }
@@ -25,4 +23,4 @@ function LeftRightButtons({ signs, setCurrentIndex, currentIndex }) {
   );
 }
 
-export default LeftRightButtons;
+export default PrevNextButtons;
