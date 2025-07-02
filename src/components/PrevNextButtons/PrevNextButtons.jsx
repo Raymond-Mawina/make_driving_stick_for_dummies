@@ -1,3 +1,5 @@
+import "./PrevNextButtons.css";
+
 function PrevNextButtons({ signs, setCurrentIndex, currentIndex }) {
   return (
     <section id="button_container">

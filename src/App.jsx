@@ -11,17 +11,9 @@ function App() {
   return (
     <>
       <section id="app_container">
-        <section id="sign_category">
-          <p>{signs[currentIndex].primary_category}</p>
-          <p>{signs[currentIndex].secondary_category}</p>
-        </section>
-
         <LearnSignCard
-          signMetadata={signs[currentIndex]}
-          currentIndex={currentIndex}
-        />
-        <PrevNextButtons
           signs={signs}
+          signMetadata={signs[currentIndex]}
           currentIndex={currentIndex}
           setCurrentIndex={setCurrentIndex}
         />
