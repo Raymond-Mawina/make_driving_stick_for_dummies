@@ -1,6 +1,6 @@
 import PrevNextButtons from "../PrevNextButtons/PrevNextButtons";
 import SignCategories from "../SignCategories/SignCategories";
-import "./LearnSignCard.css";
+import "./SignCardLearn.css";
 
 function LearnSignCard({ signs, signMetadata, currentIndex, setCurrentIndex }) {
   return (

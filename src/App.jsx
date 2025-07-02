@@ -1,8 +1,8 @@
 import { useState } from "react";
+
 import "./App.css";
 import signMetadata from "./sign_metadata";
-import LearnSignCard from "./components/LearnSignCard/LearnSignCard";
-import PrevNextButtons from "./components/PrevNextButtons/PrevNextButtons";
+import SignCardLearn from "./components/SignCardLearn/SignCardLearn";
 
 function App() {
   const [signs, _] = useState(signMetadata);
@@ -11,7 +11,7 @@ function App() {
   return (
     <>
       <section id="app_container">
-        <LearnSignCard
+        <SignCardLearn
           signs={signs}
           signMetadata={signs[currentIndex]}
           currentIndex={currentIndex}
