@@ -1,6 +1,6 @@
-import "./PrevNextButtons.css";
+import "./PrevNextCardButtons.css";
 
-function PrevNextButtons({ signs, setCurrentIndex, currentIndex }) {
+function PrevNextCardButtons({ signs, setCurrentIndex, currentIndex }) {
   return (
     <section id="button_container">
       <button
@@ -25,4 +25,4 @@ function PrevNextButtons({ signs, setCurrentIndex, currentIndex }) {
   );
 }
 
-export default PrevNextButtons;
+export default PrevNextCardButtons;

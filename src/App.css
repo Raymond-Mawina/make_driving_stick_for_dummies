@@ -7,8 +7,8 @@
 
 #app_container{
   background-color: beige;
-  block-size: 38rem;
-  inline-size: 20rem;
+  block-size: 50rem;
+  inline-size: 80rem;
   justify-content: center;
   border-radius: 2rem;
   border: black solid 15px;

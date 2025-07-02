@@ -1,4 +1,6 @@
-
+p{
+  color:black;
+}
 img {
   block-size: 10rem;
   inline-size: 10rem;
