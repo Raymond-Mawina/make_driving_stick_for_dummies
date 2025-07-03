@@ -8,6 +8,26 @@ function App() {
   const [signs, setSigns] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(-1);
 
+  const [sectionedSigns, setSectionedSigns] = useState([]);
+  const [numberOfCardsPerSection, setNumberOfCardsPerSection] = useState(10);
+  const [currentSection, setCurrentSection] = useState(1);
+
+  useEffect(() => {
+    const newSectionStartValue =
+      currentSection * numberOfCardsPerSection - numberOfCardsPerSection;
+
+    const newSectionEndValue = currentSection * numberOfCardsPerSection - 1;
+
+    setSectionedSigns(
+      signs.slice(
+        newSectionStartValue,
+        newSectionEndValue > signs.length ? signs.length : newSectionEndValue
+      )
+    );
+
+    setCurrentIndex(0);
+  }, [currentSection]);
+
   useEffect(() => {
     function shuffleArray(array) {
       let currentIndex = array.length;
@@ -28,6 +48,7 @@ function App() {
     const shuffledArray = [...shuffleArray([...signMetadata])];
     setSigns(shuffledArray);
     setCurrentIndex(0);
+    setSectionedSigns([...shuffledArray.slice(0, 9)]);
   }, []);
 
   return (
@@ -36,8 +57,12 @@ function App() {
         {currentIndex !== -1 && (
           <SignCardLearn
             signs={signs}
+            sectionedSigns={sectionedSigns}
             currentIndex={currentIndex}
             setCurrentIndex={setCurrentIndex}
+            currentSection={currentSection}
+            setCurrentSection={setCurrentSection}
+            numberOfCardsPerSection={numberOfCardsPerSection}
           />
         )}
       </section>

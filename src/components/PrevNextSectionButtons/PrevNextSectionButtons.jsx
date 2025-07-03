@@ -12,6 +12,8 @@ function PrevNextSectionButtons({
         ? Math.floor(signs.length / numberOfCardsPerSection)
         : Math.round(signs.length / numberOfCardsPerSection);
 
+    console.log("maxNumberOfSections: ", maxNumberOfSections);
+
     if (currentSection < maxNumberOfSections) {
       setCurrentSection((prev) => prev + 1);
     }
